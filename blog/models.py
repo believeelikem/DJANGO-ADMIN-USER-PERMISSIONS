@@ -7,6 +7,10 @@ class Post(models.Model):
     
     def __str__(self):
         return self.title
-    
-    
 
+
+class Book(models.Model):
+    title = models.CharField(max_length=224)
+    
+    def __str__(self):
+        return self.title
